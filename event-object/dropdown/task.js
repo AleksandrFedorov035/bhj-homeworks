@@ -3,7 +3,7 @@ const dropdownList = document.querySelector(".dropdown__list");
 const dropdownValue = document.querySelector(".dropdown__value")
 
 function OpenList() {
-    dropdownList.classList.add("dropdown__list_active")
+    dropdownList.classList.toggle("dropdown__list_active")
 }
 
 function CloseList() {

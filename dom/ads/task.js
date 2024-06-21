@@ -1,7 +1,9 @@
 const rotators = Array.from(document.querySelectorAll(".rotator__case"))
 let index = 0;
 
-setInterval(() => {
+const intervalId = setInterval(changePhrase, 1000)
+
+function changePhrase() {
 	rotators.forEach(element => {
         element.classList.remove('rotator__case_active')
       });
@@ -12,4 +14,4 @@ setInterval(() => {
         } else {
             return index = 0;
         }
-}, 1000)
+}
